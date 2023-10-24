@@ -38,7 +38,7 @@ public class Dog {
 
     // Metodo per restituire proprietà oggetto
     public String showProperties(){
-        return "This "
+        return "A "
                 + getAge()
                 + " year old dog loves to be called "
                 + getName()

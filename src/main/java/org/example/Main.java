@@ -12,5 +12,14 @@ public class Main {
         System.out.println(patricio.showProperties());
         System.out.println(kiwi.showProperties());
 
+        Cat merrell = new Cat();
+        merrell.setCatName("Merrell");
+        merrell.setCatAge(4);
+        Cat ray = new Cat("Ray");
+        Cat solana = new Cat("Solana",3);
+
+        System.out.println(merrell.showProperties());
+        System.out.println(ray.showProperties());
+        System.out.println(solana.showProperties());
     }
 }
