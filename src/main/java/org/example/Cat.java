@@ -3,58 +3,59 @@ package org.example;
 public class Cat {
 
     /**
-     * Istanze e variabile static numCats
+     * Istanze e variabile static totalNumber
      */
-    private String catName;
-    private int catAge;
-    private static int numCats;
+    private String name;
+    private int age;
+    private static int totalNumber;
 
     /**
      * Costruttori classe Cat
      */
     public Cat(){
-        this.numCats++;
+        this.totalNumber++;
     }
     public Cat(String name){
-        this.catName = name;
-        this.numCats++;
+        this.name = name;
+        this.totalNumber++;
     }
     public Cat(String name, int age){
-        this.catName = name;
-        this.catAge = age;
-        this.numCats++;
+        this.name = name;
+        this.age = age;
+        this.totalNumber++;
     }
 
     /**
-     * Metodi per settare catName, catAge, numCats
+     * Metodi per settare name, age, totalNumber
      */
-    public void setCatName(String catName) {
-        this.catName = catName;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setCatAge(int catAge){
-        this.catAge = catAge;
+    public void setAge(int age){
+        this.age = age;
     }
 
     /**
-     * Metodi per tornare catName, catAge, nCats, tutte le proprietà
+     * Metodi per tornare name, age, numero gatti, tutte le proprietà
      */
-    public String getCatName(){
-        return catName;
+    public String getName(){
+        return name;
     }
-    public int getCatAge(){
-        return catAge;
+    public int getAge(){
+        return age;
     }
-    public int getNumCats(){
-        return numCats;
+    public int getTotalNumber(){
+        return totalNumber;
     }
 
-    public String showProperties(){
+    @Override
+    public String toString(){
         return  "Cat name: "
-                + getCatName()
+                + getName()
                 + ". Cat age: "
-                + getCatAge()
+                + getAge()
                 + ". Now we have a group of "
-                + getNumCats()
+                + getTotalNumber()
                 +" cats.";
     }
 }

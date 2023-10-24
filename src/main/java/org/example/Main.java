@@ -8,18 +8,16 @@ public class Main {
         patricio.setName("Patricio");
         patricio.setAge(15);
         Dog kiwi = new Dog("Kiwi",10);
-
         System.out.println(patricio.showProperties());
         System.out.println(kiwi.showProperties());
 
         Cat merrell = new Cat();
-        merrell.setCatName("Merrell");
-        merrell.setCatAge(4);
+        merrell.setName("Merrell");
+        merrell.setAge(4);
+        System.out.println(merrell);
         Cat ray = new Cat("Ray");
+        System.out.println(ray);
         Cat solana = new Cat("Solana",3);
-
-        System.out.println(merrell.showProperties());
-        System.out.println(ray.showProperties());
-        System.out.println(solana.showProperties());
+        System.out.println(solana);
     }
 }
