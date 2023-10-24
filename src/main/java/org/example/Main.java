@@ -19,5 +19,11 @@ public class Main {
         System.out.println(ray);
         Cat solana = new Cat("Solana",3);
         System.out.println(solana);
+
+        Bird marion = new Bird("Marion");
+        System.out.println(marion.stringOfNames());
+        Bird max = new Bird("Max");
+        System.out.println(max.stringOfNames());
+
     }
 }

@@ -13,16 +13,16 @@ public class Cat {
      * Costruttori classe Cat
      */
     public Cat(){
-        this.totalNumber++;
+        totalNumber++;
     }
     public Cat(String name){
         this.name = name;
-        this.totalNumber++;
+        totalNumber++;
     }
     public Cat(String name, int age){
         this.name = name;
         this.age = age;
-        this.totalNumber++;
+        totalNumber++;
     }
 
     /**
