@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +27,14 @@ public class Main {
         Bird max = new Bird("Max");
         System.out.println(max.stringOfNames());
 
+        List<String> listOfStrings = new ArrayList<>();
+        listOfStrings.add("Palindrome");
+        listOfStrings.add("Nolemonnomelon");
+        listOfStrings.add("AmanaplanacanalPanama");
+        listOfStrings.add("MadaminEdenImAdam");
+        listOfStrings.add("AToyotasAToyota");
+        for (String string : listOfStrings) {
+            System.out.println(Util.isPalindrome(string));
+        }
     }
 }
